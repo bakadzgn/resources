@@ -18,6 +18,6 @@ function encrypt(){ // encrypt URL
 			f.value = "Copy";
 			z.value = location.protocol + "//" + location.hostname + "/get/?url=" + a;
 		}
-	else l.http && l.https || (t.value = "", t.placeholder = "URL harus mengandung http:// atau https://");
-	else "" == t.value && (t.placeholder = "URL tidak boleh kosong")
+	else l.http && l.https || (t.value = "", t.placeholder = "URL harus mengandung http:// atau https://", z.value = "");
+	else "" == t.value && (t.placeholder = "URL tidak boleh kosong", z.value = "")
 }
