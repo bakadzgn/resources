@@ -3,8 +3,8 @@
 */
 
 function getTiming(){
-	totalTimeout += 1000;
-	if(totalTimeout <= 6001){
+	totalTimeout = 1000;
+	if(totalTimeout <= 1001){
 		setTimeout(setTiming, totalTimeout);
 	}
 }
