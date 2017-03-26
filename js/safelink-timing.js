@@ -1,15 +1,12 @@
 /*
- * Code by BakaDzgn
- */
+* Code by BakaDzgn
+*/
 
-function startTiming(){
-  getTiming();
-}
 function getTiming(){
-  totalTimeout += 1000;
-  if(totalTimeout <= 6001){
-	  setTimeout(setTiming, totalTimeout);
-  }
+	totalTimeout += 1000;
+	if(totalTimeout <= 6001){
+		setTimeout(setTiming, totalTimeout);
+	}
 }
 function setTiming(){
 	totalSeconds -= 1,
